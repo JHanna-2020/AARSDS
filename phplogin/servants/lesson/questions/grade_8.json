@@ -1,0 +1,20 @@
+[
+    {
+        "id": 2,
+        "question": "Which planet is known as the Red Planet?",
+        "option_a": "Venus",
+        "option_b": "Jupiter",
+        "option_c": "Mars",
+        "option_d": "Saturn",
+        "correct": "C"
+    },
+    {
+        "id": 0,
+        "question": "question 4",
+        "option_a": "A",
+        "option_b": "B",
+        "option_c": "C",
+        "option_d": "D",
+        "correct": "B"
+    }
+]

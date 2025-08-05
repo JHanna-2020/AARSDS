@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <title>Servants</title>
+        <link href="../AAR-Sunday-School/css/theme.css" rel="stylesheet" type="text/css">
+        <link href="css/theme.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+<body>
+    <h1>Admin View</h1>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <title>Home</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="dark.js" defer></script>
+
+
+        <style>
+        h2 { color: #fff; }
+        buttons { text-align: center; border-radius: 10%; display: inline-block; justify-content: center; align-items: center;
+        text-decoration-style: center; background: rgba(50,50,50,0.6); width: 200px; height: 120px; transition: width,height 1s; } 
+        buttons:hover.a { background: rgba(201, 76, 76, 0.9); width: 200px; height: 200px; } 
+        buttons:hover.b { background: rgba(50, 76, 200, 0.9); width: 200px; height: 200px; } 
+        buttons:hover.c { background: rgba(90, 80, 70, 0.9); width: 200px; height: 200px; } 
+        buttons:hover.d { background: rgba(20, 120, 20, 0.9); width: 200px; height: 200px; } 
+        .w3-third { float: left; width: 33.33%; text-align: center; justify-content: center; align-items: auto; }
+        </style>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+        
+        <header class="header">
+            <div class="wrapper">
+                <h1>AAR Church Meetings</h1>
+                <nav class="menu">
+                    <a href="profile.php">Profile</a>
+                    <a onclick="toggleDarkMode()">&#9789Dark</a>
+                    <a href="logout.php"> <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="#000" d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.5 0 32 14.3 32 32s-14.3 32-32 32z"/> 
+                        </svg>
+                        Logout </a>
+                </nav>
+            </div>
+        </header>
+        <div class="w3-row-padding">
+            <div class="page-title">
+                <div class="wrap">
+                    <h2>Welcome Back, <?=htmlspecialchars($_SESSION['account_name'], ENT_QUOTES)?>!</h2>
+                </div>
+            </div>
+            <div class="w3-third">
+                <h2></h2>
+                <br></br>
+                <buttons class="b" onclick="location.href='story.php'" style="display: inline-flex;"> 
+                    <h2>Mens</h2>
+                </buttons>
+                <p></p>
+
+                <h2></h2>
+                <br></br>
+                <buttons class="b" onclick="location.href='story.php'" style="display: inline-flex;"> 
+                    <h2>Elderly</h2>
+                </buttons>
+                <p></p>
+
+                <h2></h2>
+                <br></br>
+                <buttons class="d" onclick="location.href='question.php'" style="display: inline-flex;">
+                    <h2>Adults Meeting Class</h2>
+                </buttons>                 
+                <p></p>
+
+                <h2></h2>
+                <br></br>
+                <buttons class="d" onclick="location.href='question.php'" style="display: inline-flex;">
+                    <h2>Servants Meeting</h2>
+                </buttons>                 
+                <p></p>
+            </div>
+            <div class="w3-third">
+                <buttons class="a" onclick="location.href='lesson.php'" style="display: inline-flex;">
+                    <h2>Womens</h2>
+                </buttons>
+                <br></br><br></br><br></br><br></br>
+                <buttons class="c" onclick="location.href='bible.php'" style="display: inline-flex;">
+                    <h2>Newly Married</h2>
+                </buttons> 
+                <br></br><br></br><br></br><br></br>
+                <buttons class="c" onclick="location.href='hymns.php'" style="display: inline-flex;">
+                    <h2>Family Meeting</h2>
+                </buttons>                
+            </div>
+            <div class="w3-third">
+                <h2></h2>
+                <br></br>
+                <buttons class="d" onclick="location.href='question.php'" style="display: inline-flex;">
+                    <h2>Arabic Bible Study</h2>
+                </buttons>                 
+                <p></p>
+
+                <h2></h2>
+                <br></br>
+                <buttons class="d" onclick="location.href='question.php'" style="display: inline-flex;">
+                    <h2>Bible Chat</h2>
+                </buttons>                 
+                <p></p>
+
+                <h2></h2>
+                <br></br>
+                <buttons class="d" onclick="location.href='question.php'" style="display: inline-flex;">
+                    <h2>Hymns Class</h2>
+                </buttons>                 
+                <p></p>
+            </div>
+        </div>
+</body>
